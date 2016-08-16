@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66ABCACA1D62ECD3008ACDAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCAC91D62ECD3008ACDAC /* main.m */; };
+		66ABCACD1D62ECD3008ACDAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCACC1D62ECD3008ACDAC /* AppDelegate.m */; };
+		66ABCAD01D62ECD3008ACDAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCACF1D62ECD3008ACDAC /* ViewController.m */; };
+		66ABCAD31D62ECD3008ACDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ABCAD11D62ECD3008ACDAC /* Main.storyboard */; };
+		66ABCAD51D62ECD3008ACDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66ABCAD41D62ECD3008ACDAC /* Assets.xcassets */; };
+		66ABCAD81D62ECD3008ACDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ABCAD61D62ECD3008ACDAC /* LaunchScreen.storyboard */; };
+		66ABCAE31D62ECD3008ACDAC /* TYRecordScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCAE21D62ECD3008ACDAC /* TYRecordScreenTests.m */; };
+		66ABCAEE1D62ECD3008ACDAC /* TYRecordScreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCAED1D62ECD3008ACDAC /* TYRecordScreenUITests.m */; };
+		66ABCAFC1D62EEDF008ACDAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCAFB1D62EEDF008ACDAC /* CoreGraphics.framework */; };
+		66ABCAFE1D62EEE8008ACDAC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCAFD1D62EEE8008ACDAC /* AudioToolbox.framework */; };
+		66ABCB001D62EF08008ACDAC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCAFF1D62EF08008ACDAC /* MediaPlayer.framework */; };
+		66ABCB021D62EF11008ACDAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB011D62EF11008ACDAC /* AVFoundation.framework */; };
+		66ABCB041D62EF16008ACDAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB031D62EF16008ACDAC /* Foundation.framework */; };
+		66ABCB061D62EF1E008ACDAC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB051D62EF1E008ACDAC /* Security.framework */; };
+		66ABCB081D62EF28008ACDAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB071D62EF28008ACDAC /* QuartzCore.framework */; };
+		66ABCB0A1D62EF30008ACDAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB091D62EF30008ACDAC /* UIKit.framework */; };
+		66ABCB0C1D62EF3F008ACDAC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB0B1D62EF3F008ACDAC /* CoreMedia.framework */; };
+		66ABCB0E1D62EF4C008ACDAC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB0D1D62EF4C008ACDAC /* CoreAudio.framework */; };
+		66ABCB101D62EF56008ACDAC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB0F1D62EF56008ACDAC /* CoreVideo.framework */; };
+		66ABCB121D62EF5F008ACDAC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB111D62EF5F008ACDAC /* CoreLocation.framework */; };
+		66ABCB141D62EF69008ACDAC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB131D62EF69008ACDAC /* CoreFoundation.framework */; };
+		66ABCB161D62EF74008ACDAC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ABCB151D62EF74008ACDAC /* libz.tbd */; };
+		66ABCB251D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCB1A1D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.m */; };
+		66ABCB261D62F004008ACDAC /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCB1D1D62F004008ACDAC /* CGContextCreator.m */; };
+		66ABCB271D62F004008ACDAC /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCB1F1D62F004008ACDAC /* CGImageContainer.m */; };
+		66ABCB281D62F004008ACDAC /* THCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCB221D62F004008ACDAC /* THCapture.m */; };
+		66ABCB291D62F004008ACDAC /* THCaptureUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ABCB241D62F004008ACDAC /* THCaptureUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66ABCADF1D62ECD3008ACDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66ABCABD1D62ECD3008ACDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66ABCAC41D62ECD3008ACDAC;
+			remoteInfo = TYRecordScreen;
+		};
+		66ABCAEA1D62ECD3008ACDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66ABCABD1D62ECD3008ACDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66ABCAC41D62ECD3008ACDAC;
+			remoteInfo = TYRecordScreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66ABCAC51D62ECD3008ACDAC /* TYRecordScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYRecordScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ABCAC91D62ECD3008ACDAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66ABCACB1D62ECD3008ACDAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66ABCACC1D62ECD3008ACDAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66ABCACE1D62ECD3008ACDAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66ABCACF1D62ECD3008ACDAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66ABCAD21D62ECD3008ACDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66ABCAD41D62ECD3008ACDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66ABCAD71D62ECD3008ACDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66ABCAD91D62ECD3008ACDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ABCADE1D62ECD3008ACDAC /* TYRecordScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYRecordScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ABCAE21D62ECD3008ACDAC /* TYRecordScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYRecordScreenTests.m; sourceTree = "<group>"; };
+		66ABCAE41D62ECD3008ACDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ABCAE91D62ECD3008ACDAC /* TYRecordScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYRecordScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ABCAED1D62ECD3008ACDAC /* TYRecordScreenUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYRecordScreenUITests.m; sourceTree = "<group>"; };
+		66ABCAEF1D62ECD3008ACDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ABCAFB1D62EEDF008ACDAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66ABCAFD1D62EEE8008ACDAC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		66ABCAFF1D62EF08008ACDAC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		66ABCB011D62EF11008ACDAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66ABCB031D62EF16008ACDAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66ABCB051D62EF1E008ACDAC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		66ABCB071D62EF28008ACDAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		66ABCB091D62EF30008ACDAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66ABCB0B1D62EF3F008ACDAC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		66ABCB0D1D62EF4C008ACDAC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		66ABCB0F1D62EF56008ACDAC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		66ABCB111D62EF5F008ACDAC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		66ABCB131D62EF69008ACDAC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		66ABCB151D62EF74008ACDAC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		66ABCB171D62EF94008ACDAC /* TYRecordScreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYRecordScreen-Prefix.pch"; sourceTree = "<group>"; };
+		66ABCB191D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceAudioRecordAndTransCoding.h; sourceTree = "<group>"; };
+		66ABCB1A1D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceAudioRecordAndTransCoding.m; sourceTree = "<group>"; };
+		66ABCB1C1D62F004008ACDAC /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		66ABCB1D1D62F004008ACDAC /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		66ABCB1E1D62F004008ACDAC /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		66ABCB1F1D62F004008ACDAC /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		66ABCB211D62F004008ACDAC /* THCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCapture.h; sourceTree = "<group>"; };
+		66ABCB221D62F004008ACDAC /* THCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCapture.m; sourceTree = "<group>"; };
+		66ABCB231D62F004008ACDAC /* THCaptureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaptureUtilities.h; sourceTree = "<group>"; };
+		66ABCB241D62F004008ACDAC /* THCaptureUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCaptureUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66ABCAC21D62ECD3008ACDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ABCB161D62EF74008ACDAC /* libz.tbd in Frameworks */,
+				66ABCB141D62EF69008ACDAC /* CoreFoundation.framework in Frameworks */,
+				66ABCB121D62EF5F008ACDAC /* CoreLocation.framework in Frameworks */,
+				66ABCB101D62EF56008ACDAC /* CoreVideo.framework in Frameworks */,
+				66ABCB0E1D62EF4C008ACDAC /* CoreAudio.framework in Frameworks */,
+				66ABCB0C1D62EF3F008ACDAC /* CoreMedia.framework in Frameworks */,
+				66ABCB0A1D62EF30008ACDAC /* UIKit.framework in Frameworks */,
+				66ABCB081D62EF28008ACDAC /* QuartzCore.framework in Frameworks */,
+				66ABCB061D62EF1E008ACDAC /* Security.framework in Frameworks */,
+				66ABCB041D62EF16008ACDAC /* Foundation.framework in Frameworks */,
+				66ABCB021D62EF11008ACDAC /* AVFoundation.framework in Frameworks */,
+				66ABCB001D62EF08008ACDAC /* MediaPlayer.framework in Frameworks */,
+				66ABCAFE1D62EEE8008ACDAC /* AudioToolbox.framework in Frameworks */,
+				66ABCAFC1D62EEDF008ACDAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCADB1D62ECD3008ACDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCAE61D62ECD3008ACDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66ABCABC1D62ECD3008ACDAC = {
+			isa = PBXGroup;
+			children = (
+				66ABCB151D62EF74008ACDAC /* libz.tbd */,
+				66ABCB131D62EF69008ACDAC /* CoreFoundation.framework */,
+				66ABCB111D62EF5F008ACDAC /* CoreLocation.framework */,
+				66ABCB0F1D62EF56008ACDAC /* CoreVideo.framework */,
+				66ABCB0D1D62EF4C008ACDAC /* CoreAudio.framework */,
+				66ABCB0B1D62EF3F008ACDAC /* CoreMedia.framework */,
+				66ABCB091D62EF30008ACDAC /* UIKit.framework */,
+				66ABCB071D62EF28008ACDAC /* QuartzCore.framework */,
+				66ABCB051D62EF1E008ACDAC /* Security.framework */,
+				66ABCB031D62EF16008ACDAC /* Foundation.framework */,
+				66ABCB011D62EF11008ACDAC /* AVFoundation.framework */,
+				66ABCAFF1D62EF08008ACDAC /* MediaPlayer.framework */,
+				66ABCAFD1D62EEE8008ACDAC /* AudioToolbox.framework */,
+				66ABCAFB1D62EEDF008ACDAC /* CoreGraphics.framework */,
+				66ABCAC71D62ECD3008ACDAC /* TYRecordScreen */,
+				66ABCB181D62F004008ACDAC /* RecordScreenLib */,
+				66ABCAE11D62ECD3008ACDAC /* TYRecordScreenTests */,
+				66ABCAEC1D62ECD3008ACDAC /* TYRecordScreenUITests */,
+				66ABCAC61D62ECD3008ACDAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66ABCAC61D62ECD3008ACDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCAC51D62ECD3008ACDAC /* TYRecordScreen.app */,
+				66ABCADE1D62ECD3008ACDAC /* TYRecordScreenTests.xctest */,
+				66ABCAE91D62ECD3008ACDAC /* TYRecordScreenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66ABCAC71D62ECD3008ACDAC /* TYRecordScreen */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCACB1D62ECD3008ACDAC /* AppDelegate.h */,
+				66ABCACC1D62ECD3008ACDAC /* AppDelegate.m */,
+				66ABCACE1D62ECD3008ACDAC /* ViewController.h */,
+				66ABCACF1D62ECD3008ACDAC /* ViewController.m */,
+				66ABCAD11D62ECD3008ACDAC /* Main.storyboard */,
+				66ABCAD41D62ECD3008ACDAC /* Assets.xcassets */,
+				66ABCAD61D62ECD3008ACDAC /* LaunchScreen.storyboard */,
+				66ABCAD91D62ECD3008ACDAC /* Info.plist */,
+				66ABCAC81D62ECD3008ACDAC /* Supporting Files */,
+			);
+			path = TYRecordScreen;
+			sourceTree = "<group>";
+		};
+		66ABCAC81D62ECD3008ACDAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCAC91D62ECD3008ACDAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66ABCAE11D62ECD3008ACDAC /* TYRecordScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCAE21D62ECD3008ACDAC /* TYRecordScreenTests.m */,
+				66ABCAE41D62ECD3008ACDAC /* Info.plist */,
+				66ABCB171D62EF94008ACDAC /* TYRecordScreen-Prefix.pch */,
+			);
+			path = TYRecordScreenTests;
+			sourceTree = "<group>";
+		};
+		66ABCAEC1D62ECD3008ACDAC /* TYRecordScreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCAED1D62ECD3008ACDAC /* TYRecordScreenUITests.m */,
+				66ABCAEF1D62ECD3008ACDAC /* Info.plist */,
+			);
+			path = TYRecordScreenUITests;
+			sourceTree = "<group>";
+		};
+		66ABCB181D62F004008ACDAC /* RecordScreenLib */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCB191D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.h */,
+				66ABCB1A1D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.m */,
+				66ABCB1B1D62F004008ACDAC /* CoreGraphics */,
+				66ABCB201D62F004008ACDAC /* THC */,
+			);
+			path = RecordScreenLib;
+			sourceTree = "<group>";
+		};
+		66ABCB1B1D62F004008ACDAC /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCB1C1D62F004008ACDAC /* CGContextCreator.h */,
+				66ABCB1D1D62F004008ACDAC /* CGContextCreator.m */,
+				66ABCB1E1D62F004008ACDAC /* CGImageContainer.h */,
+				66ABCB1F1D62F004008ACDAC /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		66ABCB201D62F004008ACDAC /* THC */ = {
+			isa = PBXGroup;
+			children = (
+				66ABCB211D62F004008ACDAC /* THCapture.h */,
+				66ABCB221D62F004008ACDAC /* THCapture.m */,
+				66ABCB231D62F004008ACDAC /* THCaptureUtilities.h */,
+				66ABCB241D62F004008ACDAC /* THCaptureUtilities.m */,
+			);
+			path = THC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66ABCAC41D62ECD3008ACDAC /* TYRecordScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ABCAF21D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreen" */;
+			buildPhases = (
+				66ABCAC11D62ECD3008ACDAC /* Sources */,
+				66ABCAC21D62ECD3008ACDAC /* Frameworks */,
+				66ABCAC31D62ECD3008ACDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYRecordScreen;
+			productName = TYRecordScreen;
+			productReference = 66ABCAC51D62ECD3008ACDAC /* TYRecordScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66ABCADD1D62ECD3008ACDAC /* TYRecordScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ABCAF51D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreenTests" */;
+			buildPhases = (
+				66ABCADA1D62ECD3008ACDAC /* Sources */,
+				66ABCADB1D62ECD3008ACDAC /* Frameworks */,
+				66ABCADC1D62ECD3008ACDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66ABCAE01D62ECD3008ACDAC /* PBXTargetDependency */,
+			);
+			name = TYRecordScreenTests;
+			productName = TYRecordScreenTests;
+			productReference = 66ABCADE1D62ECD3008ACDAC /* TYRecordScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66ABCAE81D62ECD3008ACDAC /* TYRecordScreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66ABCAF81D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreenUITests" */;
+			buildPhases = (
+				66ABCAE51D62ECD3008ACDAC /* Sources */,
+				66ABCAE61D62ECD3008ACDAC /* Frameworks */,
+				66ABCAE71D62ECD3008ACDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66ABCAEB1D62ECD3008ACDAC /* PBXTargetDependency */,
+			);
+			name = TYRecordScreenUITests;
+			productName = TYRecordScreenUITests;
+			productReference = 66ABCAE91D62ECD3008ACDAC /* TYRecordScreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66ABCABD1D62ECD3008ACDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TianYang;
+				TargetAttributes = {
+					66ABCAC41D62ECD3008ACDAC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					66ABCADD1D62ECD3008ACDAC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 66ABCAC41D62ECD3008ACDAC;
+					};
+					66ABCAE81D62ECD3008ACDAC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 66ABCAC41D62ECD3008ACDAC;
+					};
+				};
+			};
+			buildConfigurationList = 66ABCAC01D62ECD3008ACDAC /* Build configuration list for PBXProject "TYRecordScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66ABCABC1D62ECD3008ACDAC;
+			productRefGroup = 66ABCAC61D62ECD3008ACDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66ABCAC41D62ECD3008ACDAC /* TYRecordScreen */,
+				66ABCADD1D62ECD3008ACDAC /* TYRecordScreenTests */,
+				66ABCAE81D62ECD3008ACDAC /* TYRecordScreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66ABCAC31D62ECD3008ACDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ABCAD81D62ECD3008ACDAC /* LaunchScreen.storyboard in Resources */,
+				66ABCAD51D62ECD3008ACDAC /* Assets.xcassets in Resources */,
+				66ABCAD31D62ECD3008ACDAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCADC1D62ECD3008ACDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCAE71D62ECD3008ACDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66ABCAC11D62ECD3008ACDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ABCAD01D62ECD3008ACDAC /* ViewController.m in Sources */,
+				66ABCB251D62F004008ACDAC /* BlazeiceAudioRecordAndTransCoding.m in Sources */,
+				66ABCACD1D62ECD3008ACDAC /* AppDelegate.m in Sources */,
+				66ABCB291D62F004008ACDAC /* THCaptureUtilities.m in Sources */,
+				66ABCACA1D62ECD3008ACDAC /* main.m in Sources */,
+				66ABCB261D62F004008ACDAC /* CGContextCreator.m in Sources */,
+				66ABCB281D62F004008ACDAC /* THCapture.m in Sources */,
+				66ABCB271D62F004008ACDAC /* CGImageContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCADA1D62ECD3008ACDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ABCAE31D62ECD3008ACDAC /* TYRecordScreenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABCAE51D62ECD3008ACDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66ABCAEE1D62ECD3008ACDAC /* TYRecordScreenUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66ABCAE01D62ECD3008ACDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66ABCAC41D62ECD3008ACDAC /* TYRecordScreen */;
+			targetProxy = 66ABCADF1D62ECD3008ACDAC /* PBXContainerItemProxy */;
+		};
+		66ABCAEB1D62ECD3008ACDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66ABCAC41D62ECD3008ACDAC /* TYRecordScreen */;
+			targetProxy = 66ABCAEA1D62ECD3008ACDAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66ABCAD11D62ECD3008ACDAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66ABCAD21D62ECD3008ACDAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66ABCAD61D62ECD3008ACDAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66ABCAD71D62ECD3008ACDAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66ABCAF01D62ECD3008ACDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66ABCAF11D62ECD3008ACDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66ABCAF31D62ECD3008ACDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TYRecordScreenTests/TYRecordScreen-Prefix.pch";
+				INFOPLIST_FILE = TYRecordScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66ABCAF41D62ECD3008ACDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TYRecordScreenTests/TYRecordScreen-Prefix.pch";
+				INFOPLIST_FILE = TYRecordScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66ABCAF61D62ECD3008ACDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYRecordScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYRecordScreen.app/TYRecordScreen";
+			};
+			name = Debug;
+		};
+		66ABCAF71D62ECD3008ACDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYRecordScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYRecordScreen.app/TYRecordScreen";
+			};
+			name = Release;
+		};
+		66ABCAF91D62ECD3008ACDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYRecordScreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYRecordScreen;
+			};
+			name = Debug;
+		};
+		66ABCAFA1D62ECD3008ACDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYRecordScreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linknow.TYRecordScreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYRecordScreen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66ABCAC01D62ECD3008ACDAC /* Build configuration list for PBXProject "TYRecordScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ABCAF01D62ECD3008ACDAC /* Debug */,
+				66ABCAF11D62ECD3008ACDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ABCAF21D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ABCAF31D62ECD3008ACDAC /* Debug */,
+				66ABCAF41D62ECD3008ACDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ABCAF51D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ABCAF61D62ECD3008ACDAC /* Debug */,
+				66ABCAF71D62ECD3008ACDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66ABCAF81D62ECD3008ACDAC /* Build configuration list for PBXNativeTarget "TYRecordScreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66ABCAF91D62ECD3008ACDAC /* Debug */,
+				66ABCAFA1D62ECD3008ACDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66ABCABD1D62ECD3008ACDAC /* Project object */;
+}
